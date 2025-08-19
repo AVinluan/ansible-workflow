@@ -22,14 +22,14 @@ jobs:
               webservers:
                 hosts:
                   web01:
-                    ansible_host: 10.128.0.4
+                    ansible_host: 10.158.0.4 # 1
                     ansible_user: anthony
                     
 
               databases:
                 hosts:
                   db01:
-                    ansible_host: 10.204.0.2
+                    ansible_host: 10.190.0.7 # 2
                     ansible_user: anthony
                     db_version: 14
                    
