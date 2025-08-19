@@ -13,3 +13,27 @@ jobs:
         run: |
           ansible all --list-hosts -i /home/anthony/ansible/inventory.yaml
           ansible all -m ping -i /home/anthony/ansible/inventory.yaml
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+ ansible all -m command  -a ' hostname'
+
+ansible all -m command  -a 'hostname -i '
+ ansible all -m command  -a 'date '
+
+ansible all -m command  -a 'pwd'
+ ansible all -m command  -a 'whoami'
+
+
+ansible databases  -m yum -a 'name=httpd state=present'
+ansible webservers  -m yum -a 'name=docker state=present'
+ansible all  -m yum -a 'name=git state=present'
+
+
+
+ANSIBLE  INBUILT DOCUMENTATION 
+ansible-doc –l
+ansible-doc yum
+ansible-doc  firewalld 
+
+
+/Examples 
